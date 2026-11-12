@@ -1,0 +1,342 @@
+﻿﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>留言墙系统流程图</title>
+<style>
+  body{background:#fff;margin:0;padding:36px 16px;}
+  .chart{display:flex;justify-content:center;margin:0 0 72px;}
+  svg{display:block;background:#fff;}
+  .box{fill:#fff;stroke:#000;stroke-width:1.3;}
+  .t{font:10.5pt "Times New Roman","SimSun",serif;fill:#000;text-anchor:middle;dominant-baseline:central;}
+  .vt{font:10.5pt "Times New Roman","SimSun",serif;fill:#000;text-anchor:middle;}
+  .lbl{font:10.5pt "Times New Roman","SimSun",serif;fill:#000;dominant-baseline:central;}
+  .an{font:10.5pt "Times New Roman","SimSun",serif;fill:#000;dominant-baseline:central;}
+  .ln{stroke:#000;stroke-width:1.3;fill:none;}
+</style>
+</head>
+<body>
+<div class="chart">
+<svg width="920" height="720" viewBox="0 0 920 720">
+  <rect class="box" x="33" y="20" width="44" height="130"/>
+  <text class="vt" x="55" y="44">登</text><text class="vt" x="55" y="72">录</text><text class="vt" x="55" y="100">注</text><text class="vt" x="55" y="128">册</text>
+  <rect class="box" x="151" y="20" width="44" height="130"/>
+  <text class="vt" x="173" y="58">留</text><text class="vt" x="173" y="86">言</text><text class="vt" x="173" y="114">墙</text>
+  <rect class="box" x="269" y="20" width="44" height="130"/>
+  <text class="vt" x="291" y="58">照</text><text class="vt" x="291" y="86">片</text><text class="vt" x="291" y="114">墙</text>
+  <rect class="box" x="387" y="20" width="44" height="130"/>
+  <text class="vt" x="409" y="44">留</text><text class="vt" x="409" y="72">言</text><text class="vt" x="409" y="100">详</text><text class="vt" x="409" y="128">情</text>
+  <rect class="box" x="505" y="20" width="44" height="130"/>
+  <text class="vt" x="527" y="44">发</text><text class="vt" x="527" y="72">布</text><text class="vt" x="527" y="100">留</text><text class="vt" x="527" y="128">言</text>
+  <rect class="box" x="623" y="20" width="44" height="130"/>
+  <text class="vt" x="645" y="72">我</text><text class="vt" x="645" y="100">的</text>
+  <rect class="box" x="690" y="30" width="190" height="116"/>
+  <text class="an" x="703" y="60">我的留言</text>
+  <text class="an" x="703" y="86">我的评论</text>
+  <text class="an" x="703" y="112">个人资料（修改密码）</text>
+  <text class="an" x="703" y="138">消息</text>
+  <line class="ln" x1="667" y1="86" x2="690" y2="86"/>
+  <line class="ln" x1="55" y1="150" x2="55" y2="190"/>
+  <line class="ln" x1="173" y1="150" x2="173" y2="190"/>
+  <line class="ln" x1="291" y1="150" x2="291" y2="190"/>
+  <line class="ln" x1="409" y1="150" x2="409" y2="190"/>
+  <line class="ln" x1="527" y1="150" x2="527" y2="190"/>
+  <line class="ln" x1="645" y1="150" x2="645" y2="190"/>
+  <line class="ln" x1="55" y1="190" x2="645" y2="190"/>
+  <line class="ln" x1="350" y1="190" x2="350" y2="220"/>
+  <rect class="box" x="300" y="220" width="100" height="40"/>
+  <text class="t" x="350" y="240">前台</text>
+  <line class="ln" x1="350" y1="260" x2="350" y2="290"/>
+  <rect class="box" x="240" y="290" width="220" height="50"/>
+  <text class="t" x="350" y="315">校园交流留言墙系统</text>
+  <line class="ln" x1="350" y1="340" x2="350" y2="370"/>
+  <rect class="box" x="300" y="370" width="100" height="40"/>
+  <text class="t" x="350" y="390">后台</text>
+  <line class="ln" x1="350" y1="410" x2="350" y2="520"/>
+  <line class="ln" x1="88" y1="520" x2="613" y2="520"/>
+  <line class="ln" x1="88" y1="520" x2="88" y2="550"/>
+  <line class="ln" x1="193" y1="520" x2="193" y2="550"/>
+  <line class="ln" x1="298" y1="520" x2="298" y2="550"/>
+  <line class="ln" x1="403" y1="520" x2="403" y2="550"/>
+  <line class="ln" x1="508" y1="520" x2="508" y2="550"/>
+  <line class="ln" x1="613" y1="520" x2="613" y2="550"/>
+  <rect class="box" x="66" y="550" width="44" height="130"/>
+  <text class="vt" x="88" y="601">登</text><text class="vt" x="88" y="629">录</text>
+  <rect class="box" x="171" y="550" width="44" height="130"/>
+  <text class="vt" x="193" y="587">仪</text><text class="vt" x="193" y="615">表</text><text class="vt" x="193" y="643">盘</text>
+  <rect class="box" x="276" y="550" width="44" height="130"/>
+  <text class="vt" x="298" y="574">留</text><text class="vt" x="298" y="602">言</text><text class="vt" x="298" y="630">管</text><text class="vt" x="298" y="658">理</text>
+  <rect class="box" x="381" y="550" width="44" height="130"/>
+  <text class="vt" x="403" y="574">标</text><text class="vt" x="403" y="602">签</text><text class="vt" x="403" y="630">管</text><text class="vt" x="403" y="658">理</text>
+  <rect class="box" x="486" y="550" width="44" height="130"/>
+  <text class="vt" x="508" y="574">用</text><text class="vt" x="508" y="602">户</text><text class="vt" x="508" y="630">管</text><text class="vt" x="508" y="658">理</text>
+  <rect class="box" x="591" y="550" width="44" height="130"/>
+  <text class="vt" x="613" y="574">评</text><text class="vt" x="613" y="602">论</text><text class="vt" x="613" y="630">管</text><text class="vt" x="613" y="658">理</text>
+</svg>
+</div>
+<div class="chart">
+<svg width="880" height="700" viewBox="0 0 880 700">
+  <defs><marker id="a2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#000"/></marker></defs>
+  <rect class="box" x="280" y="20" width="120" height="44" rx="22"/>
+  <text class="t" x="340" y="42">开始</text>
+  <line class="ln" x1="340" y1="64" x2="340" y2="92" marker-end="url(#a2)"/>
+  <rect class="box" x="260" y="92" width="160" height="44"/>
+  <text class="t" x="340" y="114">登录界面</text>
+  <line class="ln" x1="260" y1="114" x2="215" y2="114" marker-end="url(#a2)"/>
+  <line class="ln" x1="340" y1="136" x2="340" y2="164" marker-end="url(#a2)"/>
+  <rect class="box" x="260" y="164" width="160" height="44"/>
+  <text class="t" x="340" y="186">输入账号、密码</text>
+  <line class="ln" x1="340" y1="208" x2="340" y2="236" marker-end="url(#a2)"/>
+  <polygon class="box" points="340,236 445,280 340,324 235,280"/>
+  <text class="t" x="340" y="280">校验是否通过</text>
+  <polyline class="ln" points="445,280 505,280 505,186 420,186" marker-end="url(#a2)"/>
+  <text class="lbl" x="474" y="268">N</text>
+  <line class="ln" x1="340" y1="324" x2="340" y2="388" marker-end="url(#a2)"/>
+  <text class="lbl" x="350" y="358">Y</text>
+  <polygon class="box" points="340,388 450,432 340,476 230,432"/>
+  <text class="t" x="340" y="432">判断用户角色</text>
+  <line class="ln" x1="230" y1="432" x2="190" y2="432" marker-end="url(#a2)"/>
+  <rect class="box" x="40" y="410" width="150" height="44"/>
+  <text class="t" x="115" y="432">管理员</text>
+  <line class="ln" x1="115" y1="454" x2="115" y2="478" marker-end="url(#a2)"/>
+  <rect class="box" x="40" y="478" width="150" height="44"/>
+  <text class="t" x="115" y="500">后台管理</text>
+  <line class="ln" x1="450" y1="432" x2="490" y2="432" marker-end="url(#a2)"/>
+  <rect class="box" x="490" y="410" width="150" height="44"/>
+  <text class="t" x="565" y="432">普通用户</text>
+  <line class="ln" x1="565" y1="454" x2="565" y2="478" marker-end="url(#a2)"/>
+  <rect class="box" x="490" y="478" width="150" height="44"/>
+  <text class="t" x="565" y="500">进入留言墙首页</text>
+  <line class="ln" x1="115" y1="522" x2="115" y2="566"/>
+  <line class="ln" x1="565" y1="522" x2="565" y2="566"/>
+  <line class="ln" x1="115" y1="566" x2="565" y2="566"/>
+  <line class="ln" x1="340" y1="566" x2="340" y2="594" marker-end="url(#a2)"/>
+  <rect class="box" x="280" y="594" width="120" height="44" rx="22"/>
+  <text class="t" x="340" y="616">结束</text>
+  <rect class="box" x="65" y="92" width="150" height="44"/>
+  <text class="t" x="140" y="114">注册新账号</text>
+  <line class="ln" x1="140" y1="136" x2="140" y2="164" marker-end="url(#a2)"/>
+  <rect class="box" x="65" y="164" width="150" height="44"/>
+  <text class="t" x="140" y="186">填写用户信息</text>
+  <line class="ln" x1="140" y1="208" x2="140" y2="236" marker-end="url(#a2)"/>
+  <polygon class="box" points="140,236 220,280 140,324 60,280"/>
+  <text class="t" x="140" y="280">用户名是否可用</text>
+  <polyline class="ln" points="60,280 35,280 35,186 65,186" marker-end="url(#a2)"/>
+  <text class="lbl" x="52" y="264" text-anchor="middle">N</text>
+  <line class="ln" x1="140" y1="324" x2="140" y2="346" marker-end="url(#a2)"/>
+  <text class="lbl" x="153" y="336">Y</text>
+  <rect class="box" x="65" y="346" width="150" height="44"/>
+  <text class="t" x="140" y="368">保存到用户表</text>
+  <polyline class="ln" points="65,368 20,368 20,74 300,74 300,92" marker-end="url(#a2)"/>
+  <line class="ln" x1="420" y1="114" x2="600" y2="114" marker-end="url(#a2)"/>
+  <rect class="box" x="600" y="92" width="150" height="44"/>
+  <text class="t" x="675" y="114">游客登录</text>
+  <line class="ln" x1="675" y1="136" x2="675" y2="196" marker-end="url(#a2)"/>
+  <polygon class="box" points="675,196 760,240 675,284 590,240"/>
+  <text class="t" x="675" y="240">是否确认游客登录</text>
+  <polyline class="ln" points="675,284 675,500 640,500" marker-end="url(#a2)"/>
+  <text class="lbl" x="687" y="304">Y</text>
+  <polyline class="ln" points="760,240 800,240 800,78 390,78 390,92" marker-end="url(#a2)"/>
+  <text class="lbl" x="762" y="224">N</text>
+</svg>
+</div>
+<div class="chart">
+<svg width="760" height="815" viewBox="-40 0 760 815">
+  <defs><marker id="a3" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#000"/></marker></defs>
+  <rect class="box" x="320" y="20" width="120" height="44" rx="22"/>
+  <text class="t" x="380" y="42">开始</text>
+  <line class="ln" x1="380" y1="64" x2="380" y2="92" marker-end="url(#a3)"/>
+  <rect class="box" x="300" y="92" width="160" height="44"/>
+  <text class="t" x="380" y="114">点击右下角“+”</text>
+  <line class="ln" x1="380" y1="136" x2="380" y2="164" marker-end="url(#a3)"/>
+  <polygon class="box" points="380,164 490,210 380,256 270,210"/>
+  <text class="t" x="380" y="210">是否已登录</text>
+  <line class="ln" x1="270" y1="210" x2="180" y2="210" marker-end="url(#a3)"/>
+  <text class="lbl" x="262" y="192" text-anchor="end">N</text>
+  <rect class="box" x="40" y="188" width="140" height="44"/>
+  <text class="t" x="110" y="210">弹出登录框</text>
+  <line class="ln" x1="110" y1="232" x2="110" y2="260" marker-end="url(#a3)"/>
+  <polygon class="box" points="110,260 220,306 110,352 0,306"/>
+  <text class="t" x="110" y="306">是否登录成功</text>
+  <polyline class="ln" points="0,306 -20,306 -20,114 300,114" marker-end="url(#a3)"/>
+  <text class="lbl" x="-8" y="292" text-anchor="middle">Y</text>
+  <polyline class="ln" points="110,352 110,766 320,766" marker-end="url(#a3)"/>
+  <text class="lbl" x="100" y="368" text-anchor="end">N</text>
+  <line class="ln" x1="380" y1="256" x2="380" y2="288" marker-end="url(#a3)"/>
+  <text class="lbl" x="392" y="274">Y</text>
+  <rect class="box" x="280" y="288" width="200" height="44"/>
+  <text class="t" x="380" y="310">填写内容并选择标签</text>
+  <line class="ln" x1="380" y1="332" x2="380" y2="360" marker-end="url(#a3)"/>
+  <polygon class="box" points="380,360 490,406 380,452 270,406"/>
+  <text class="t" x="380" y="406">正文是否为空</text>
+  <polyline class="ln" points="270,406 250,406 250,310 280,310" marker-end="url(#a3)"/>
+  <text class="lbl" x="244" y="394" text-anchor="end">N</text>
+  <line class="ln" x1="380" y1="452" x2="380" y2="480" marker-end="url(#a3)"/>
+  <text class="lbl" x="392" y="470">Y</text>
+  <polygon class="box" points="380,480 490,526 380,572 270,526"/>
+  <text class="t" x="380" y="526">是否上传图片</text>
+  <line class="ln" x1="490" y1="526" x2="550" y2="526" marker-end="url(#a3)"/>
+  <text class="lbl" x="502" y="508">Y</text>
+  <rect class="box" x="550" y="504" width="130" height="44"/>
+  <text class="t" x="615" y="526">上传图片</text>
+  <polyline class="ln" points="615,548 615,622 460,622" marker-end="url(#a3)"/>
+  <line class="ln" x1="380" y1="572" x2="380" y2="600" marker-end="url(#a3)"/>
+  <text class="lbl" x="392" y="590">N</text>
+  <rect class="box" x="300" y="600" width="160" height="44"/>
+  <text class="t" x="380" y="622">保存留言到数据库</text>
+  <line class="ln" x1="380" y1="644" x2="380" y2="672" marker-end="url(#a3)"/>
+  <rect class="box" x="300" y="672" width="160" height="44"/>
+  <text class="t" x="380" y="694">关闭弹窗并刷新列表</text>
+  <line class="ln" x1="380" y1="716" x2="380" y2="744" marker-end="url(#a3)"/>
+  <rect class="box" x="320" y="744" width="120" height="44" rx="22"/>
+  <text class="t" x="380" y="766">结束</text>
+</svg>
+</div>
+<div class="chart">
+<svg width="840" height="760" viewBox="0 0 840 760">
+  <defs><marker id="a4" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#000"/></marker></defs>
+  <rect class="box" x="400" y="20" width="120" height="44" rx="22"/>
+  <text class="t" x="460" y="42">开始</text>
+  <line class="ln" x1="460" y1="64" x2="460" y2="92" marker-end="url(#a4)"/>
+  <rect class="box" x="380" y="92" width="160" height="44"/>
+  <text class="t" x="460" y="114">点击点赞图标</text>
+  <line class="ln" x1="460" y1="136" x2="460" y2="164" marker-end="url(#a4)"/>
+  <polygon class="box" points="460,164 570,210 460,256 350,210"/>
+  <text class="t" x="460" y="210">是否已登录</text>
+  <line class="ln" x1="350" y1="210" x2="300" y2="210" marker-end="url(#a4)"/>
+  <text class="lbl" x="342" y="192" text-anchor="end">N</text>
+  <rect class="box" x="160" y="188" width="140" height="44"/>
+  <text class="t" x="230" y="210">弹出登录框</text>
+  <line class="ln" x1="230" y1="232" x2="230" y2="260" marker-end="url(#a4)"/>
+  <polygon class="box" points="230,260 340,306 230,352 120,306"/>
+  <text class="t" x="230" y="306">是否登录成功</text>
+  <polyline class="ln" points="120,306 60,306 60,114 380,114" marker-end="url(#a4)"/>
+  <text class="lbl" x="112" y="288" text-anchor="end">Y</text>
+  <polyline class="ln" points="230,352 230,710 400,710" marker-end="url(#a4)"/>
+  <text class="lbl" x="218" y="370" text-anchor="end">N</text>
+  <line class="ln" x1="460" y1="256" x2="460" y2="288" marker-end="url(#a4)"/>
+  <text class="lbl" x="472" y="274">Y</text>
+  <polygon class="box" points="460,288 570,334 460,380 350,334"/>
+  <text class="t" x="460" y="334">是否已点赞</text>
+  <line class="ln" x1="570" y1="334" x2="630" y2="334" marker-end="url(#a4)"/>
+  <text class="lbl" x="582" y="316">Y</text>
+  <rect class="box" x="630" y="312" width="170" height="44"/>
+  <text class="t" x="715" y="334">删除该条点赞记录</text>
+  <polyline class="ln" points="715,356 715,380 810,380 810,638 540,638" marker-end="url(#a4)"/>
+  <line class="ln" x1="460" y1="380" x2="460" y2="412" marker-end="url(#a4)"/>
+  <text class="lbl" x="472" y="398">N</text>
+  <rect class="box" x="380" y="412" width="160" height="44"/>
+  <text class="t" x="460" y="434">写入点赞记录</text>
+  <line class="ln" x1="460" y1="456" x2="460" y2="484" marker-end="url(#a4)"/>
+  <polygon class="box" points="460,484 590,534 460,584 330,534"/>
+  <text class="t" x="460" y="534">是否为卡片作者本人</text>
+  <line class="ln" x1="460" y1="584" x2="460" y2="616" marker-end="url(#a4)"/>
+  <text class="lbl" x="448" y="602" text-anchor="end">Y</text>
+  <line class="ln" x1="590" y1="534" x2="650" y2="534" marker-end="url(#a4)"/>
+  <text class="lbl" x="602" y="516">N</text>
+  <rect class="box" x="650" y="512" width="140" height="44"/>
+  <text class="t" x="720" y="534">发送点赞消息</text>
+  <polyline class="ln" points="720,556 720,600 460,600"/>
+  <rect class="box" x="380" y="616" width="160" height="44"/>
+  <text class="t" x="460" y="638">更新点赞数</text>
+  <line class="ln" x1="460" y1="660" x2="460" y2="688" marker-end="url(#a4)"/>
+  <rect class="box" x="400" y="688" width="120" height="44" rx="22"/>
+  <text class="t" x="460" y="710">结束</text>
+</svg>
+</div>
+<div class="chart">
+<svg width="820" height="880" viewBox="-40 0 820 880">
+  <defs><marker id="a5" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#000"/></marker></defs>
+  <rect class="box" x="320" y="20" width="120" height="44" rx="22"/>
+  <text class="t" x="380" y="42">开始</text>
+  <line class="ln" x1="380" y1="64" x2="380" y2="92" marker-end="url(#a5)"/>
+  <rect class="box" x="300" y="92" width="160" height="44"/>
+  <text class="t" x="380" y="114">打开留言详情</text>
+  <line class="ln" x1="380" y1="136" x2="380" y2="164" marker-end="url(#a5)"/>
+  <rect class="box" x="300" y="164" width="160" height="44"/>
+  <text class="t" x="380" y="186">输入评论/回复内容</text>
+  <line class="ln" x1="380" y1="208" x2="380" y2="236" marker-end="url(#a5)"/>
+  <polygon class="box" points="380,236 490,282 380,328 270,282"/>
+  <text class="t" x="380" y="282">是否已登录</text>
+  <line class="ln" x1="270" y1="282" x2="125" y2="282" marker-end="url(#a5)"/>
+  <text class="lbl" x="262" y="264" text-anchor="end">N</text>
+  <rect class="box" x="-15" y="260" width="140" height="44"/>
+  <text class="t" x="55" y="282">弹出登录框</text>
+  <line class="ln" x1="55" y1="304" x2="55" y2="332" marker-end="url(#a5)"/>
+  <polygon class="box" points="55,332 135,378 55,424 -25,378"/>
+  <text class="t" x="55" y="378">是否登录成功</text>
+  <polyline class="ln" points="-25,378 -32,378 -32,114 300,114" marker-end="url(#a5)"/>
+  <text class="lbl" x="-20" y="364" text-anchor="middle">Y</text>
+  <polyline class="ln" points="55,424 55,834 320,834" marker-end="url(#a5)"/>
+  <text class="lbl" x="68" y="440">N</text>
+  <line class="ln" x1="380" y1="328" x2="380" y2="420" marker-end="url(#a5)"/>
+  <text class="lbl" x="392" y="376">Y</text>
+  <polygon class="box" points="380,420 510,470 380,520 250,470"/>
+  <text class="t" x="380" y="470">评论还是回复</text>
+  <line class="ln" x1="250" y1="470" x2="200" y2="470" marker-end="url(#a5)"/>
+  <rect class="box" x="70" y="448" width="140" height="44"/>
+  <text class="t" x="140" y="470">保存评论到数据库</text>
+  <line class="ln" x1="510" y1="470" x2="580" y2="470" marker-end="url(#a5)"/>
+  <rect class="box" x="580" y="448" width="150" height="44"/>
+  <text class="t" x="655" y="470">校验父评论</text>
+  <line class="ln" x1="655" y1="492" x2="655" y2="520" marker-end="url(#a5)"/>
+  <rect class="box" x="580" y="520" width="150" height="44"/>
+  <text class="t" x="655" y="542">保存回复到数据库</text>
+  <line class="ln" x1="140" y1="492" x2="140" y2="584"/>
+  <line class="ln" x1="655" y1="564" x2="655" y2="584"/>
+  <line class="ln" x1="140" y1="584" x2="655" y2="584"/>
+  <line class="ln" x1="380" y1="584" x2="380" y2="614" marker-end="url(#a5)"/>
+  <polygon class="box" points="380,614 510,664 380,714 250,664"/>
+  <text class="t" x="380" y="664">评论对象是否为他人</text>
+  <line class="ln" x1="510" y1="664" x2="570" y2="664" marker-end="url(#a5)"/>
+  <text class="lbl" x="518" y="646">Y</text>
+  <rect class="box" x="570" y="642" width="140" height="44"/>
+  <text class="t" x="640" y="664">写入消息通知</text>
+  <polyline class="ln" points="640,686 640,762 460,762" marker-end="url(#a5)"/>
+  <line class="ln" x1="380" y1="714" x2="380" y2="740" marker-end="url(#a5)"/>
+  <text class="lbl" x="392" y="732">N</text>
+  <rect class="box" x="300" y="740" width="160" height="44"/>
+  <text class="t" x="380" y="762">刷新评论列表</text>
+  <line class="ln" x1="380" y1="784" x2="380" y2="812" marker-end="url(#a5)"/>
+  <rect class="box" x="320" y="812" width="120" height="44" rx="22"/>
+  <text class="t" x="380" y="834">结束</text>
+</svg>
+</div>
+<div class="chart">
+<svg width="680" height="720" viewBox="0 0 680 720">
+  <defs><marker id="a6" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#000"/></marker></defs>
+  <rect class="box" x="240" y="20" width="120" height="44" rx="22"/>
+  <text class="t" x="300" y="42">开始</text>
+  <line class="ln" x1="300" y1="64" x2="300" y2="92" marker-end="url(#a6)"/>
+  <rect class="box" x="220" y="92" width="160" height="44"/>
+  <text class="t" x="300" y="114">点击顶栏头像（红点）</text>
+  <line class="ln" x1="300" y1="136" x2="300" y2="164" marker-end="url(#a6)"/>
+  <rect class="box" x="220" y="164" width="160" height="44"/>
+  <text class="t" x="300" y="186">进入个人空间消息页</text>
+  <line class="ln" x1="300" y1="208" x2="300" y2="236" marker-end="url(#a6)"/>
+  <rect class="box" x="220" y="236" width="160" height="44"/>
+  <text class="t" x="300" y="258">加载消息列表与未读数</text>
+  <line class="ln" x1="300" y1="280" x2="300" y2="308" marker-end="url(#a6)"/>
+  <rect class="box" x="220" y="308" width="160" height="44"/>
+  <text class="t" x="300" y="330">点击某条消息</text>
+  <line class="ln" x1="300" y1="352" x2="300" y2="376" marker-end="url(#a6)"/>
+  <polygon class="box" points="300,376 420,424 300,472 180,424"/>
+  <text class="t" x="300" y="424">该消息是否未读</text>
+  <line class="ln" x1="300" y1="472" x2="300" y2="504" marker-end="url(#a6)"/>
+  <text class="lbl" x="312" y="490">Y</text>
+  <rect class="box" x="220" y="504" width="160" height="44"/>
+  <text class="t" x="300" y="526">标记为已读</text>
+  <line class="ln" x1="300" y1="548" x2="300" y2="576" marker-end="url(#a6)"/>
+  <rect class="box" x="220" y="576" width="160" height="44"/>
+  <text class="t" x="300" y="598">跳转对应留言</text>
+  <line class="ln" x1="300" y1="620" x2="300" y2="648" marker-end="url(#a6)"/>
+  <line class="ln" x1="420" y1="424" x2="490" y2="424"/>
+  <polyline class="ln" points="490,424 490,598 380,598" marker-end="url(#a6)"/>
+  <text class="lbl" x="432" y="406">N</text>
+  <rect class="box" x="240" y="648" width="120" height="44" rx="22"/>
+  <text class="t" x="300" y="670">结束</text>
+</svg>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+// 免登录白名单
+const WHITE_LIST = ['/login', '/register']
+
+// 安全解析 localStorage 里的 userInfo：try-catch 包住 JSON.parse
+// 解析成功返回对象；失败/为空返回 null（清理由调用处处理）
+const getUserInfo = () => {
+    try {
+        const raw = localStorage.getItem('userInfo')
+        return raw ? JSON.parse(raw) : null
+    } catch (err) {
+        return null
+    }
+}
+
+router.beforeEach((to, from, next) => {
+    const token = localStorage.getItem('token')
+
+    // 规则1：白名单页面
+    if (WHITE_LIST.includes(to.path)) {
+        // 无 token：直接放行
+        if (!token) {
+            return next()
+        }
+        // 有 token：解析 userInfo，失败则清理并跳登录
+        const userInfo = getUserInfo()
+        if (!userInfo) {
+            localStorage.removeItem('token')
+            localStorage.removeItem('userInfo')
+            return next('/login')
+        }
+        // 规则4：已登录再访问登录/注册页，管理员去后台，其他去首页
+        return next(Number(userInfo.role) === 1 ? '/admin/index' : '/')
+    }
+
+    // 规则2：非白名单且无 token，一律跳登录
+    if (!token) {
+        return next('/login')
+    }
+
+    // 规则3：有 token，解析 userInfo
+    const userInfo = getUserInfo()
+    if (!userInfo) {
+        // JSON 解析失败：清 token、userInfo，跳 /login 并 return，不再走后面逻辑
+        localStorage.removeItem('token')
+        localStorage.removeItem('userInfo')
+        return next('/login')
+    }
+
+    // 规则5：访问 /admin 开头的路由，必须是管理员，否则强制回首页
+    if (to.path.startsWith('/admin')) {
+        if (Number(userInfo.role) === 1) {
+            return next()
+        }
+        return next('/')
+    }
+
+    // 普通已登录用户访问其他页面，放行
+    next()
+})

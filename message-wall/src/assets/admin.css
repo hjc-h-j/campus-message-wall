@@ -1,0 +1,371 @@
+/* ==================== 后台全局样式 admin.css ==================== */
+
+/* 一、配色体系：CSS 变量 */
+:root {
+  --primary: #409eff;
+  --primary-light: #ecf5ff;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --sidebar-bg: #f0f9ff;
+  --sidebar-text: #475569;
+  --sidebar-active-bg: #6366f1;
+  --sidebar-active-text: #ffffff;
+  --page-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-sub: #64748b;
+  --border: #e2e8f0;
+}
+
+/* 全局重置 */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-main);
+}
+
+/* 二、侧边栏 */
+.admin-aside {
+  width: 220px !important;
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%) !important;
+  border-right: 1px solid var(--border) !important;
+}
+
+/* logo 区 */
+.admin-logo {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-main);
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+/* el-menu 透明背景 */
+.admin-aside .el-menu {
+  background: transparent !important;
+  border-right: none !important;
+  padding: 8px 0;
+}
+
+/* 菜单项 */
+.admin-aside .el-menu-item {
+  height: 48px;
+  line-height: 48px;
+  margin: 4px 12px;
+  border-radius: 8px;
+  color: var(--sidebar-text) !important;
+  background: transparent !important;
+}
+
+/* 菜单 hover */
+.admin-aside .el-menu-item:hover {
+  background: rgba(64, 158, 255, 0.1) !important;
+  color: var(--primary) !important;
+}
+
+/* 菜单选中 */
+.admin-aside .el-menu-item.is-active {
+  background: linear-gradient(90deg, #409eff, #66b1ff) !important;
+  color: #ffffff !important;
+  position: relative;
+}
+
+.admin-aside .el-menu-item.is-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+
+/* 图标和文字间距 */
+.admin-aside .el-menu-item .el-icon {
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+/* 三、顶部 header */
+.admin-header {
+  height: 64px !important;
+  background: #ffffff !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px !important;
+}
+
+.admin-header .header-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.admin-header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.admin-header .header-right .user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.admin-header .header-right .user-name {
+  font-size: 14px;
+  color: var(--text-sub);
+}
+
+/* 四、页面容器 */
+.admin-page {
+  padding: 24px;
+  background: var(--page-bg);
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.admin-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: 24px;
+  padding-left: 12px;
+  position: relative;
+}
+
+.admin-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 20px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* 五、卡片 el-card */
+.el-card {
+  border-radius: 12px !important;
+  border: none !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+  transition: box-shadow 0.3s ease !important;
+}
+
+.el-card:hover {
+  box-shadow: 0 4px 12px rgba(64, 158, 255, 0.1) !important;
+}
+
+.el-card__body {
+  padding: 24px !important;
+}
+
+/* 六、统计卡片（Dashboard 专用） */
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat-card .stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.stat-card .stat-icon.indigo {
+  background: #ecf5ff;
+  color: #409eff;
+}
+
+.stat-card .stat-icon.green {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.stat-card .stat-icon.orange {
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.stat-card .stat-icon.red {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.stat-card .stat-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.2;
+}
+
+.stat-card .stat-label {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-top: 4px;
+}
+
+/* 统计卡片间距 */
+.dashboard-cards .el-col {
+  margin-bottom: 16px;
+}
+
+/* 七、表格 el-table */
+.el-table {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.el-table th.el-table__cell {
+  background: var(--page-bg) !important;
+  color: var(--text-sub) !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.el-table .el-table__row {
+  height: 56px;
+}
+
+.el-table__row:hover > td.el-table__cell {
+  background: var(--page-bg) !important;
+}
+
+/* 斑马纹 */
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background: #fafbfc !important;
+}
+
+/* 八、标签 el-tag */
+.el-tag {
+  border-radius: 6px !important;
+  border: none !important;
+}
+
+.el-tag.tag-text {
+  background: #ecf5ff;
+  color: #409eff;
+}
+
+.el-tag.tag-photo {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.el-tag.tag-admin {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+.el-tag.tag-user {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+/* 九、按钮 */
+.el-button--primary {
+  border-radius: 8px !important;
+  background: linear-gradient(135deg, #409eff, #66b1ff) !important;
+  border: none !important;
+  transition: filter 0.2s ease !important;
+}
+
+.el-button--primary:hover {
+  filter: brightness(1.1);
+}
+
+.el-button--default {
+  border-radius: 8px !important;
+  border-color: var(--border) !important;
+}
+
+.el-button--danger {
+  background: #ef4444 !important;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+/* 操作列 link 按钮 */
+.el-button--primary.is-link {
+  background: transparent !important;
+  color: var(--primary) !important;
+}
+
+.el-button--danger.is-link {
+  background: transparent !important;
+  color: var(--danger) !important;
+}
+
+/* 十、输入框 / 下拉框 */
+.el-input__wrapper,
+.el-select__wrapper {
+  border-radius: 8px !important;
+  box-shadow: 0 0 0 1px var(--border) inset !important;
+  transition: box-shadow 0.2s ease !important;
+}
+
+.el-input__wrapper.is-focus,
+.el-select__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--primary) inset, 0 0 0 3px rgba(64, 158, 255, 0.1) !important;
+}
+
+/* 十一、分页 */
+.el-pagination {
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.el-pagination .el-pager .is-active {
+  background: var(--primary) !important;
+  color: #ffffff !important;
+  border-radius: 4px;
+}
+
+/* 十二、弹窗 el-dialog */
+.el-dialog {
+  border-radius: 12px !important;
+}
+
+.el-dialog__header {
+  padding: 20px 24px !important;
+}
+
+.el-dialog__footer {
+  text-align: right !important;
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+  transition: transform 0.3s ease !important;
+}
+
+.el-dialog__headerbtn:hover .el-dialog__close {
+  transform: rotate(90deg);
+}
+
+/* el-main 去掉默认 padding，用 .admin-page 自己的 padding */
+.el-main {
+  padding: 0 !important;
+  background: var(--page-bg);
+}
